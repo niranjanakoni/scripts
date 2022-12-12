@@ -1,0 +1,2 @@
+FOLDER:/path/to/backup/source
+USB_PATH:/path/to/backup/destination
