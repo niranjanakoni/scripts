@@ -30,8 +30,8 @@ if ! [ -f $file ]; then
 fi
 
 # Getting the folder and USB path from config.txt
-FOLDERS=$(grep "FOLDER" $file | awk -F ":" '{print $2}')
-USB_PATH=$(grep "USB_PATH" $file | awk -F ":" '{print $2}')
+FOLDERS=$(grep "^FOLDER" $file | awk -F ":" '{print $2}')
+USB_PATH=$(grep "^USB_PATH" $file | awk -F ":" '{print $2}')
 
 # Check for Backup folder
 if ! [ -d ${FOLDERS} ]; then
